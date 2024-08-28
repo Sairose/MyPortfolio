@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Education, Skill } from '../assets/asstes';
 
 export default function Background() {
     const [hide, setHide] = useState(false);
@@ -17,25 +18,21 @@ export default function Background() {
             <div id="info" className='flex gap-10 mb-5'>
                 <div id="info-one">
                     <h2 onClick={() => handleShowHide('skill')} className={`text-3xl relative 
-                    before:absolute  before:h-1 before:bg-red-400 before:bottom-[-2px] 
+                    before:absolute  before:h-1 before:bg-[#30C1BA] before:bottom-[-2px] 
                     before:duration-300 ${hide ? 'before:w-0' :'before:w-full'} cursor-pointer`}>Skill</h2>
                 </div>
                 <div id="info-two">
                     <h2 onClick={() => handleShowHide('education')} className={`text-3xl relative 
-                    before:absolute before:h-1 before:bg-red-400 before:bottom-[-2px] 
+                    before:absolute before:h-1 before:bg-[#30C1BA] before:bottom-[-2px] 
                     before:duration-300 ${hide ? 'before:w-full': 'before:w-0'} cursor-pointer`}>Education</h2>
                 </div>
             </div>
             <div id="list" className='text-2xl'>
                 <ul className={`${hide ? 'hidden' : 'block'}`}>
-                    <li>HTML</li>
-                    <li>Css</li>
-                    <li>JS</li>
+                    {Skill.map((skl, indx)=>(<li key={indx} className='text-2xl md:text-3xl mb-4'>{skl}</li>))}
                 </ul>
                 <ul className={`${hide ? 'block' : 'hidden'}`}>
-                    <li>SEE: ST Paul's</li>
-                    <li>+2 : COHED</li>
-                    <li>Bachelor : BCA</li>
+                    {Education.map((edu, indx)=>(<li key={indx} className='text-2xl md:text-3xl mb-4'>{edu}</li>))}
                 </ul>
             </div>
         </div>
