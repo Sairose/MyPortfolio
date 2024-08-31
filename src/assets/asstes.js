@@ -14,3 +14,17 @@ export const Education = [
     'Bachelor: Ambition College'
 ]
 
+export const ReachOut = [
+    {
+        heading: "Address",
+        data: "Kathmandu, Battisputali"
+    },
+    {
+        heading: "Email",
+        data: "sairosestha40@gmail.com"
+    },
+    {
+        heading: "Phone Number",
+        data: "9815976429"
+    },
+]
