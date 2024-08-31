@@ -1,9 +1,11 @@
+import { useContext } from "react";
 import { IoMdMoon } from "react-icons/io";
 import { IoMdSunny } from "react-icons/io";
+import { DLContext } from "./DarkLightContext";
 
 
-export default function DarkLightMode({toggle,handleToggle}) {
-  
+export default function DarkLightMode() {
+  const {toggle,handleToggle} = useContext(DLContext);
   return (
     <div className="flex items-center gap-1">
       <div id='outer-button' className='w-[80px] h-8 border-2 border-[#30C1BA] rounded-full cursor-pointer' onClick={handleToggle}>
@@ -18,3 +20,4 @@ export default function DarkLightMode({toggle,handleToggle}) {
 
   )
 }
+
