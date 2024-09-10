@@ -32,7 +32,7 @@ export default function Background() {
                     {Skill.map((skl, indx)=>(<li key={indx} className='text-2xl md:text-3xl mb-4'>{skl}</li>))}
                 </ul>
                 <ul className={`${hide ? 'block' : 'hidden'}`}>
-                    {Education.map((edu, indx)=>(<li key={indx} className='text-2xl md:text-3xl mb-4'>{edu}</li>))}
+                    {Education.map((edu, indx)=>(<li key={indx} className='text-2xl md:text-3xl mb-4'>{`${edu.EduHead} : ${edu.Edudata}`}</li>))}
                 </ul>
             </div>
         </div>

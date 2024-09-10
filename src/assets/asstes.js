@@ -1,7 +1,7 @@
 export const Skill = [
-    'HTML (HyperText Markup Language)',
-    'CSS  (Cascading Style Sheet)',
-    'JS   (JavaScript)',
+    'HTML',
+    'CSS',
+    'JS',
     'React js',
     'Tailwind CSS',
     'PHP',
@@ -9,9 +9,18 @@ export const Skill = [
 ]
 
 export const Education = [
-    'SEE: ST Pauls English Boarding School',
-    '+2 : COHED College',
-    'Bachelor: Ambition College'
+    {
+        EduHead: "SEE",
+        Edudata: "ST Pauls English Boarding School"
+    },
+    {
+        EduHead: "+2",
+        Edudata: "COHED College"
+    },
+    {
+        EduHead: "Bachelor",
+        Edudata: "Ambition College"
+    }
 ]
 
 export const ReachOut = [
