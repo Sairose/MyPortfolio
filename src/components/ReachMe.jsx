@@ -9,7 +9,8 @@ export default function ReachMe() {
             {
                 ReachOut.map((curValue, indx) =>{
                     return(
-                        <div key={indx} className='border-2 border-[#30C1BA] rounded-lg m-4 py-3 px-5 text-center cursor-pointer transition-all hover:translate-x-[-4px] hover:translate-y-[-4px] hover:shadow-lg hover:shadow-emerald-300'>
+                        <div key={indx} className='border-2 border-[#30C1BA] rounded-lg m-4 py-3 px-5 text-center cursor-pointer 
+                        transition-all hover:translate-x-[-4px] hover:translate-y-[-4px] hover:shadow-lg hover:shadow-emerald-300'>
                             <h3>{curValue.heading}</h3>
                             <p>{curValue.data}</p>
                         </div>

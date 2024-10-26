@@ -3,6 +3,7 @@ import Hero from './components/Hero'
 import NavBar from './components/NavBar';
 import { DLContext } from './components/DarkLightContext';
 
+
 export default function App() {
   const  {toggle} = useContext(DLContext);
   return (
@@ -10,5 +11,6 @@ export default function App() {
       <NavBar/>
       <Hero />
     </div>
+    
   )
 }

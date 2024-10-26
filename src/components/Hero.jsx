@@ -3,6 +3,7 @@ import About from './About'
 import Background from './Background'
 import ReachMe from './ReachMe'
 import Links from './Links'
+import MyProject from './MyProject'
 
 
 export default function Hero() {
@@ -15,6 +16,7 @@ export default function Hero() {
       </div>
       <About />
       <Background />
+      <MyProject/>
       <ReachMe />
     </>
   )
