@@ -7,7 +7,7 @@ export default function MyProjectCard({data}) {
         shadow-lg hover:shadow-emerald-300 ">
             <div>
                 <img src={data.image} alt=""
-                    className="h-[300px] object-cover"
+                    className="h-[200px] sm:h-[300px] object-cover"
                 />
             </div>
             <div>

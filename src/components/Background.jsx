@@ -14,15 +14,15 @@ export default function Background() {
     }
     return (
         <div className='w-full min-h-[500px] pt-10 flex flex-col  gap-2 sm:pl-10'>
-            <h1 className='text-5xl md:text-6xl mb-10'>My Background</h1>
+            <h1 className='text-3xl sm:text-5xl md:text-6xl mb-10'>My Background</h1>
             <div id="info" className='flex gap-10 mb-5'>
                 <div id="info-one">
-                    <h2 onClick={() => handleShowHide('skill')} className={`text-3xl relative 
+                    <h2 onClick={() => handleShowHide('skill')} className={`text-2xl sm:text-3xl relative 
                     before:absolute  before:h-1 before:bg-[#30C1BA] before:bottom-[-2px] 
                     before:duration-300 ${hide ? 'before:w-0' :'before:w-full'} cursor-pointer`}>Skill</h2>
                 </div>
                 <div id="info-two">
-                    <h2 onClick={() => handleShowHide('education')} className={`text-3xl relative 
+                    <h2 onClick={() => handleShowHide('education')} className={`text-2xl sm:text-3xl relative 
                     before:absolute before:h-1 before:bg-[#30C1BA] before:bottom-[-2px] 
                     before:duration-300 ${hide ? 'before:w-full': 'before:w-0'} cursor-pointer`}>Education</h2>
                 </div>

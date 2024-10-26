@@ -4,7 +4,7 @@ import { ReachOut } from '../assets/asstes'
 export default function ReachMe() {
   return (
     <div className='w-full pt-10 flex flex-col gap-2 sm:pl-10'>
-        <h1 className='text-5xl md:text-6xl mb-10'>Reach Out To Me</h1>
+        <h1 className='text-3xl sm:text-5xl md:text-6xl mb-10'>Reach Out To Me</h1>
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4'>
             {
                 ReachOut.map((curValue, indx) =>{

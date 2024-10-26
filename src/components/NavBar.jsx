@@ -7,7 +7,7 @@ export default function NavBar() {
   return (
     <>
       <div className='w-full flex justify-between p-4'>
-        <div id="logo" className={`text-4xl  ${toggle? 'border-black': 'border-[#30C1BA]'}`}>
+        <div id="logo" className={`text-2xl sm:text-4xl  ${toggle? 'border-black': 'border-[#30C1BA]'}`}>
             SAIROSE
         </div>
         <DarkLightMode/>
