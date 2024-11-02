@@ -13,7 +13,7 @@ export default function MyProject() {
                 MyProjectData.map((curValue, indx) =>{
                     // return <MyProjectCard key={indx} data ={curValue}/>  
                     return <div key={indx} className= 'lg:odd:border-r-2 lg:odd:translate-x-[-49.6%] lg:even:border-l-2 lg:even:translate-x-[50%] lg:border-indigo-500 lg:px-10 lg:relative lg:before:content-[""] lg:before:h-1 lg:before:w-[40px] lg:before:bg-indigo-500 lg:before:absolute lg:before:top-[50%] lg:odd:before:right-0 lg:even:before:left-0 '>
-                            <div id="inner-div" className=' w-[400px] max-h-[500px] border-2 border-gray-500 p-3 rounded-2xl'>
+                            <div id="inner-div" className='w-[340px] sm:w-[400px] max-h-[500px] border-2 border-gray-500 p-3 rounded-2xl'>
                             <div>
                                 <h3 className="text-2xl ">Project: {curValue.project}</h3>
                             </div>
